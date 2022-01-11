@@ -185,7 +185,7 @@ p {
     linear-gradient(
       rgba(0, 0, 0, 0.6), 
       rgba(0, 0, 0, 0.6)), 
-      url(../images/Cover/cover.jpg);
+      url(images/Cover/cover.jpg);
     background-size: cover;
     background-position: center;
     display: flex;
