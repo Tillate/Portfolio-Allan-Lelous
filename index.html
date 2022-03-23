@@ -82,49 +82,53 @@
                         <img src="images/Logo Techno/css.png" alt="logo css" width="89px" height="89px">
                     </div>
                     <div class="techno techno-bot">
-                        <img src="images/Logo Techno/reac.png" alt="logo React JS" width="51px" height="59px">
-                        <img src="images/Logo Techno/symfony.png" alt="logo Symfony" width="59px" height="59px">
+                        <img src="images/Logo Techno/reac.png" alt="logo React JS" width="89px" height="59px">
+                        <img src="images/Logo Techno/symfony.png" alt="logo Symfony" width="89px" height="59px">
+                        <img src="images/Logo Techno/WordPress.png" alt="logo Wordpress" width="59px" height="59px">
                     </div>
                 </div>
             </div>
         </section>
-        <section class="card" id="projets">
-            <div class="card-left card-projets" >
-                <h2>Projets</h2>
-                <ul class="nav-card">
-                    <li>
-                        <a href="#home">Accueil</a>
-                    </li>
-                    <li>
-                        <a href="#about">A Propos</a>
-                    </li>
-                    <li>
-                        <a href="#projets">Projets</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="card-right card-projets-right">
-               <div class="projet projet-1">
-                   <img src="images/Card-projets/travel.svg" alt="photo du projet 1">
-                   <a href="https://github.com/Tillate/Learning-HTML-CSS">Travel</a></span>
-               </div>
-               <div class="projet projet-2">
-                <img src="images/Card-projets/cosmo.svg" alt="photo du projet 2">
-                <a href="https://github.com/Tillate/Learning-HTML-CSS">Studio 89</a>
+
+        <section class="section-projects" id="projets">
+            <h2>Projets</h2>
+            <div class="container-projects">
+                <input type="radio" name="slider" id="item-1" checked>
+                <input type="radio" name="slider" id="item-2">
+                <input type="radio" name="slider" id="item-3">
+                <input type="radio" name="slider" id="item-4">
+                <input type="radio" name="slider" id="item-5">
+
+                <div class="carousel-projects">
+                    <label class="card-project-carousel" for="item-1" id="projet-1">
+                        <p>Symfony - Site e-commerce de vente de tableaux d'art</p>
+                        <img src="images/Projets/Art.PNG" class="carousel-project-img" alt="projet symfony ecommerce">
+                        <a href="https://github.com/Tillate/vincent-lhmte-art" class="git-img" target="_blank"><img src="images/Logo-reseaux/Github.svg" alt="" width="20px" height="20px" >Accéder au dépôt Git</a>
+                    </label>
+                    <label class="card-project-carousel" for="item-2" id="projet-2">
+                        <p>React - Application bibliothèque des pays du monde</p>
+                        <img src="images/Projets/Tpflag.png" class="carousel-project-img" alt="projet react flag">
+                        <a href="https://github.com/Tillate/TpFlag" class="git-img" target="_blank"><img src="images/Logo-reseaux/Github.svg" alt="" width="20px" height="20px" >Accéder au dépôt Git</a>
+                    </label>
+                    <label class="card-project-carousel" for="item-3" id="projet-3">
+                        <p>Symfony - Application Todo list</p>
+                        <img src="images/Projets/todolist.PNG" class="carousel-project-img" alt="projet todolist">
+                        <a href="https://github.com/Tillate/todolist" class="git-img" target="_blank"><img src="images/Logo-reseaux/Github.svg" alt="" width="20px" height="20px" >Accéder au dépôt Git</a>
+                    </label>
+                    <label class="card-project-carousel" for="item-4" id="projet-4">
+                        <p>React - Application filmothèque</p>
+                        <img src="images/Projets/Reactmovies.PNG" class="carousel-project-img" alt="projet react movies">
+                        <a href="https://github.com/Tillate/react-movies" class="git-img" target="_blank"><img src="images/Logo-reseaux/Github.svg" alt="" width="20px" height="20px" >Accéder au dépôt Git</a>
+                    </label>
+                    <label class="card-project-carousel" for="item-5" id="projet-5">
+                        <p>Wordpress - Création de theme avec Underscores</p>
+                        <img src="images/Projets/Wordpress.PNG" class="carousel-project-img" alt="projet wordpress">
+                        <a href="https://github.com/Tillate/blanktheme" class="git-img" target="_blank"><img src="images/Logo-reseaux/Github.svg" alt="" width="20px" height="20px" >Accéder au dépôt Git</a>
+                    </label>
                 </div>
-                <div class="projet projet-3">
-                    <img src="images/Card-projets/hello.svg" alt="photo du projet 3">
-                    <a href="https://github.com/Tillate/Learning-HTML-CSS">Login</a>
-                </div>
-                <div class="projet projet-4">
-                    <img src="images/Card-projets/run.svg" alt="photo du projet 4">
-                    <a href="https://github.com/Tillate/Learning-HTML-CSS">Run</a>
-                </div> 
             </div>
         </section>
+
         <section class="card" id="contact">
             <div class="card-left card-contact" >
                 <h2>Contact</h2>
@@ -160,6 +164,9 @@
                 <p class="copyright">Copyright © 2021 Allan Ls. Tous droits réservés.</p>
             </div>
         </section>
+
+
+
     </main>
 <script src="index.js"></script>
 </body>

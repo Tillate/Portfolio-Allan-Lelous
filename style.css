@@ -636,6 +636,11 @@ animation: anim 0.8s linear infinite;
     font-size: 0.8em;
 }
 
+.techno-bot img {
+    height: 79px;
+    width: 79px;
+    object-fit: contain;
+}
 /* ***** 3.5 Media Query ***** */
 
 @media only screen and (min-width: 768px) {
@@ -655,9 +660,11 @@ animation: anim 0.8s linear infinite;
     }
     
     .techno-bot img {
-        height: 59px;
-        width: auto;
+        height: 89px;
+        width: 89px;
+        object-fit: contain;
     }
+    
     .card-projets-right {
         grid-template-columns: 30% 30%;
     }
@@ -731,3 +738,126 @@ animation: anim 0.8s linear infinite;
     }
 }
 
+
+/* Carousel */
+
+.section-projects {
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 10px;
+    font-family: 'DM Sans', sans-serif;
+    background-color: #ffffff;
+  }
+  
+  input[type=radio] {
+    display: none;
+  }
+  
+  .card-project-carousel {
+    position: absolute;
+    border-radius: 10px;
+    width: 60%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: transform .4s ease;
+    cursor: pointer;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  .card-project-carousel p {
+      background-color: #6291A7;
+      color: white;
+      font-family: montserrat, sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      text-align: center;
+      padding: 10px 0;
+      border-radius: 10px 10px 0 0;
+  }
+  .git-img {
+      justify-self: center;
+      color:#6291A7;
+      font-family: montserrat, sans-serif;
+      font-weight: 400;
+      padding-left: 15px;
+      font-size: 12px;
+  }
+  .git-img img {
+      margin-right: 5px;
+  }
+  
+  .container-projects {
+    width: 100%;
+    max-width: 800px;
+    max-height: 550px;
+    height: 100%;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section-projects h2 {
+    color: #497B91;
+    font-family: dancing script, serif;
+    font-size: 3.7em;
+    margin-bottom: 20px;
+  }
+  
+  .carousel-projects {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .carousel-project-img {
+    width: 100%;
+    height: 100%;
+    
+    border-radius: 0 0 10px 10px;
+    object-fit: cover;
+  }
+  
+  #item-1:checked ~ .carousel-projects #projet-1, #item-2:checked ~ .carousel-projects #projet-2, #item-3:checked ~ .carousel-projects #projet-3, #item-4:checked ~ .carousel-projects #projet-4, #item-5:checked ~ .carousel-projects #projet-5 {
+    transform: translatex(0) scale(1);
+    opacity: 1;
+    z-index: 2;
+  }
+
+  #item-1:checked ~ .carousel-projects #projet-3, #item-2:checked ~ .carousel-projects #projet-1, #item-3:checked ~ .carousel-projects #projet-4, #item-4:checked ~ .carousel-projects #projet-5, #item-5:checked ~ .carousel-projects #projet-2 {
+    transform: translatex(-40%) scale(.8);
+    opacity: .6;
+    z-index: 1;
+  }
+  
+  #item-1:checked ~ .carousel-projects #projet-2, #item-2:checked ~ .carousel-projects #projet-5, #item-3:checked ~ .carousel-projects #projet-1, #item-4:checked ~ .carousel-projects #projet-3, #item-5:checked ~ .carousel-projects #projet-4 {
+    transform: translatex(40%) scale(.8);
+    opacity: .6;
+    z-index: 1;
+  }
+
+  #item-1:checked ~ .carousel-projects #projet-4, #item-2:checked ~ .carousel-projects #projet-3, #item-3:checked ~ .carousel-projects #projet-5, #item-4:checked ~ .carousel-projects #projet-2, #item-5:checked ~ .carousel-projects #projet-1 {
+    transform: translatex(-80%) scale(.6);
+    opacity: .4;
+    z-index: 0;
+  }
+  #item-1:checked ~ .carousel-projects #projet-5, #item-2:checked ~ .carousel-projects #projet-4, #item-3:checked ~ .carousel-projects #projet-2, #item-4:checked ~ .carousel-projects #projet-1, #item-5:checked ~ .carousel-projects #projet-3 {
+    transform: translatex(80%) scale(.6);
+    opacity: .4;
+    z-index: 0;
+  }
+
+  @media only screen and (max-width: 1023px) {
+    .container-projects {
+        max-height: 400px;
+        max-width: 600px;
+    }
+  }
