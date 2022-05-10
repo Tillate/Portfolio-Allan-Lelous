@@ -454,12 +454,15 @@ strong {
 .techno {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .techno-top img {
     width: 79px;
     height: 79px;
 }
+
+
 
 
 /* ***** 3.3 CARD PROJETS ***** */
@@ -635,6 +638,9 @@ animation: anim 0.8s linear infinite;
     bottom: 10px;
     font-size: 0.8em;
 }
+.techno .logo-sass {
+    height: 69px;
+}
 
 .techno-bot img {
     height: 79px;
@@ -654,16 +660,15 @@ animation: anim 0.8s linear infinite;
     .contact-texte h3 {
         font-size: 2em;
     }
-    .techno-top img {
+    .techno img {
         width: 89px;
         height: 89px;
     }
     
-    .techno-bot img {
-        height: 89px;
-        width: 89px;
+    .techno-bot img {  
         object-fit: contain;
     }
+
     
     .card-projets-right {
         grid-template-columns: 30% 30%;
