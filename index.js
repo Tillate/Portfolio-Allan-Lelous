@@ -33,7 +33,7 @@ const createLetter = () => {
 
 const loop = () => {
   setTimeout(() => {
-    if (wordIndex>= array.length) {
+    if (wordIndex >= array.length) {
       wordIndex = 0;
       letterIndex = 0;
       loop();
